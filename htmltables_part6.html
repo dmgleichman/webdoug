@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+	border-spacing: 15px;
+	
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+	
+table#t01 {
+    width: 100%;
+    background-color: #f1f180;
+	border: 3px solid #f33;
+}
+
+table#t01 tr:nth-child(even) {
+    background-color: #aaf;
+}
+table#t01 tr:nth-child(odd) {
+   background-color:#f88;
+}
+table#t01 th {
+    background-color: #080;
+    color: white;
+}
+
+</style>
+</head>
+<body>
+
+	<h1>Tables</h1>
+	<p>Here is an example.</p>
+	
+	<table>
+	  <tr>
+		<th>Company</th>
+		<th>Contact</th>
+		<th>Country</th>
+	  </tr>
+	  <tr>
+		<td>Alfreds Futterkiste</td>
+		<td>Maria Anders</td>
+		<td>Germany</td>
+	  </tr>
+	  <tr>
+		<td>Centro comercial Moctezuma</td>
+		<td>Francisco Chang</td>
+		<td>Mexico</td>
+	  </tr>
+	  <tr>
+		<td>Ernst Handel</td>
+		<td>Roland Mendel</td>
+		<td>Austria</td>
+	  </tr>
+	  <tr>
+		<td>Island Trading</td>
+		<td>Helen Bennett</td>
+		<td>UK</td>
+	  </tr>
+	  <tr>
+		<td>Laughing Bacchus Winecellars</td>
+		<td>Yoshi Tannamuri</td>
+		<td>Canada</td>
+	  </tr>
+	  <tr>
+		<td>Magazzini Alimentari Riuniti</td>
+		<td>Giovanni Rovelli</td>
+		<td>Italy</td>
+	  </tr>
+	</table>
+
+	<h1>Defining a table</h1>
+	<p> An HTML table is defined with the table tag. 
+	Each table row is defined with the tr tag. 
+	A table header is defined with the th tag. 
+	By default, table headings are bold and centered. 
+	A table data/cell is defined with the td tag.
+	</p>
+	
+	<h1>Adding a caption</h1>
+	<p>Use the caption tag to add a caption</p>
+	 <table style="width:100%">
+	  <caption>Monthly savings</caption>
+	  <tr>
+		<th>Month</th>
+		<th>Savings</th>
+	  </tr>
+	  <tr>
+		<td>January</td>
+		<td>$100</td>
+	  </tr>
+	  <tr>
+		<td>February</td>
+		<td>$50</td>
+	  </tr>
+	</table> 
+	
+	<h1>Span Many Columns</h1>
+	<p>To make a cell span more than one column, use the colspan attribute:</p>
+
+	<table style="width:100%">
+	  <tr>
+		<th>Name</th>
+		<th colspan="2">Telephone</th>
+	  </tr>
+	  <tr>
+		<td>Bill Gates</td>
+		<td>55577854</td>
+		<td>55577855</td>
+	  </tr>
+	</table> 
+	
+	<h1>Span Many Rows</h1>
+	<p>To make a cell span more than one row, use the rowspan attribute:</p>
+	
+	<table style="width:100%">
+	  <tr>
+		<th>Name:</th>
+		<td>Bill Gates</td>
+	  </tr>
+	  <tr>
+		<th rowspan="2">Telephone:</th>
+		<td>55577854</td>
+	  </tr>
+	  <tr>
+		<td>55577855</td>
+	  </tr>
+	</table> 
+
+	<h1>A Special Style for One Table</h1>
+	<p>To define a special style for a special table, add an id attribute to the table:</p>
+	 
+	<table id="t01">
+	  <tr>
+		<th>Firstname</th>
+		<th>Lastname</th> 
+		<th>Age</th>
+	  </tr>
+	  <tr>
+		<td>Jill</td>
+		<td>Smith</td>
+		<td>50</td>
+	  </tr>
+	  <tr>
+		<td>Eve</td>
+		<td>Jackson</td>
+		<td>94</td>
+	  </tr>
+	  <tr>
+		<td>John</td>
+		<td>Doe</td>
+		<td>80</td>
+	  </tr>
+	</table>
+
+	<h1>My Test Table</h1>
+	<p>Experiment.</p>
+	
+	<table id="t01">
+		<caption>All your personal stuff</caption>
+		<tr>
+			<th>ID</th>
+			<th>Name</th>
+			<th>Address</th>
+			<th>Phone Number</th>
+			<th>Age</th>
+			<th>Occupation</th>
+			<th>Gender</th>
+			<th>Favorite Color</th>
+		</tr>
+		<tr>
+			<td>142323</td>
+			<td>Doug Gleichman</td>
+			<td>1313 Nowhere Drive</td>
+			<td>445-666-7777</td>
+			<td>89</td>
+			<td>Engineer</td>
+			<td>Male</td>
+			<td>DarkGreen</td>
+		</tr>
+		<tr>
+			<td>142323</td>
+			<td>Doug Gleichman</td>
+			<td>1313 Nowhere Drive</td>
+			<td>445-666-7777</td>
+			<td>89</td>
+			<td>Engineer</td>
+			<td>Male</td>
+			<td>DarkGreen</td>
+		</tr>		
+		<tr>
+			<td>142323</td>
+			<td>Doug Gleichman</td>
+			<td>1313 Nowhere Drive</td>
+			<td>445-666-7777</td>
+			<td>89</td>
+			<td>Engineer</td>
+			<td>Male</td>
+			<td>DarkGreen</td>
+		</tr>		
+		<tr>
+			<td>142323</td>
+			<td>Doug Gleichman</td>
+			<td>1313 Nowhere Drive</td>
+			<td>445-666-7777</td>
+			<td>89</td>
+			<td>Engineer</td>
+			<td>Male</td>
+			<td>DarkGreen</td>
+		</tr>		
+		<tr>
+			<td>142323</td>
+			<td>Doug Gleichman</td>
+			<td>1313 Nowhere Drive</td>
+			<td>445-666-7777</td>
+			<td>89</td>
+			<td>Engineer</td>
+			<td>Male</td>
+			<td>DarkGreen</td>
+		</tr>		
+		<tr>
+			<td>142323
+			<td>Doug Gleichman
+			<td>1313 Nowhere Drive
+			<td>445-666-7777
+			<td>89
+			<td>Engineer
+			<td>Male
+			<td>DarkGreen
+		</tr>		<tr>
+			<td>142323
+			<td>Doug Gleichman
+			<td>1313 Nowhere Drive
+			<td>445-666-7777
+			<td>89
+			<td>Engineer
+			<td>Male
+			<td>DarkGreen
+		</tr>		<tr>
+			<td>142323
+			<td>Doug Gleichman
+			<td>1313 Nowhere Drive
+			<td>445-666-7777
+			<td>89
+			<td>Engineer
+			<td>Male
+			<td>DarkGreen
+		</tr>		<tr>
+			<td>142323
+			<td>Doug Gleichman
+			<td>1313 Nowhere Drive
+			<td>445-666-7777
+			<td>89
+			<td>Engineer
+			<td>Male
+			<td>DarkGreen
+		</tr>		<tr>
+			<td>142323
+			<td>Doug Gleichman
+			<td>1313 Nowhere Drive
+			<td>445-666-7777
+			<td>89
+			<td>Engineer
+			<td>Male
+			<td>DarkGreen
+		</tr>		<tr>
+			<td>142323
+			<td>Doug Gleichman
+			<td>1313 Nowhere Drive
+			<td>445-666-7777
+			<td>89
+			<td>Engineer
+			<td>Male
+			<td>DarkGreen
+		</tr>		<tr>
+			<td>142323
+			<td>Doug Gleichman
+			<td>1313 Nowhere Drive
+			<td>445-666-7777
+			<td>89
+			<td>Engineer
+			<td>Male
+			<td>DarkGreen
+		</tr>		<tr>
+			<td>142323
+			<td>Doug Gleichman
+			<td>1313 Nowhere Drive
+			<td>445-666-7777
+			<td>89
+			<td>Engineer
+			<td>Male
+			<td>DarkGreen
+		</tr>		<tr>
+			<td>142323
+			<td>Doug Gleichman
+			<td>1313 Nowhere Drive
+			<td>445-666-7777
+			<td>89
+			<td>Engineer
+			<td>Male
+			<td>DarkGreen
+		</tr>		<tr>
+			<td>142323
+			<td>Doug Gleichman
+			<td>1313 Nowhere Drive
+			<td>445-666-7777
+			<td>89
+			<td>Engineer
+			<td>Male
+			<td>DarkGreen
+		</tr>
+		
+	</table
+</body>
+</html>

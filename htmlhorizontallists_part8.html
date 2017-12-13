@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111111;
+}
+</style>
+<style>
+.city {
+    background-color: tomato;
+    color: white;
+    padding: 10px;
+}
+.town {
+    background-color: DarkGreen;
+    color: white;
+    padding: 6px;
+}
+.main {
+  text-align: center;
+}
+</style>
+
+<script>
+function myFunction() {
+  var x = document.getElementsByClassName("city");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+}
+</script>
+
+</head>
+<body>
+
+	<ul>
+	  <li><a href="#home">Home</a></li>
+	  <li><a href="#news">News</a></li>
+	  <li><a href="#contact">Contact</a></li>
+	  <li><a href="#about">About</a></li>
+	</ul>
+
+	<h1>Horizontal List</h1>
+	<p>Here is an example.</p>
+	
+	
+	<h1>Block-level Elements</h1>
+	
+	<div>Hello</div>
+	<div>World</div> 
+	
+	<p>div is used as a container for other HTML elements</p>
+	
+	 <div style="background-color:black;color:white;padding:20px;">
+	  <h2>London</h2>
+	  <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+	</div> 
+
+	<h1>Inline Elements</h1>
+	<span>Hello</span>
+	<span>World</span> 
+	
+	<p>The span element is often used as a container for some text.</p>
+	
+	<h2>My <span style="color:red">Important</span> Heading</h2>
+
+	
+	<h1>class Attribute</h1>
+	
+	<h2 class="city">London</h2>
+	<p>London is the capital of England.</p>
+
+	<h2 class="city">Paris</h2>
+	<p>Paris is the capital of France.</p>
+
+	<h2 class="city">Tokyo</h2>
+	<p>Tokyo is the capital of Japan.</p>
+	
+	<h2>Using The class Attribute in JavaScript</h2>
+	<p>JavaScript can access elements with a specified class name by using the getElementsByClassName() method.</p>
+	<p>Click the button, and a JavaScript hides all elements with the class name "city":</p>
+	<button onclick="myFunction()">Hide elements</button>
+	
+	<h1>Multiple Classes</h1>
+	<p>HTML elements can have more than one class name, each class name must be separated by a space.</p>
+	
+	<h2 class="town main">Torrance</h2>
+	<h2 class="town">Redondo Beach</h2>
+	<h2 class="town">West Covina</h2>
+
+	<p>All three headers have the class name "town", in addition, Torrance also has the class name "main", which makes the text center aligned.</p>
+	
+	<h1 id="news">News</h1>
+	<p>Pressing the News list item brings you here.</p>
+
+	<h1 id="about">About</h1>
+	<p>Pressing the About list item brings you here.</p>
+
+</body>
+</html>
+
+

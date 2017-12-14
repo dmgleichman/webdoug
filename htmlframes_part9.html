@@ -26,14 +26,68 @@
 
 
 	<h1>My First JavaScript</h1>
+	<p>The script tag is used to define a client-side script (JavaScript).
+	The script element either contains scripting statements, or it points to an external script file through the src attribute.
+	Common uses for JavaScript are image manipulation, form validation, and dynamic changes of content.
+	</p>
 
 	<button type="button"
 		onclick="document.getElementById('demo').innerHTML = Date()">
 		Click me to display Date and Time.</button>
 
 	<p id="demo"></p>
+	<p></p>
+	
+	<h1>More Javascript</h1>
+	<p>To select an HTML element, JavaScript very often use the document.getElementById(id) method.</p>
+	
+	<p id="demoagain"></p>
+	
+	<script>
+	document.getElementById("demoagain").innerHTML = "Hello JavaScript! Why is this here?";
+	</script> 
+	
+	<h1>JavaScript Change Styles</h1>
 
+	<p id="demo3">JavaScript can change the style of an HTML element.</p>
 
+	<script>
+	function myFunction() {
+		document.getElementById("demo3").style.fontSize = "25px"; 
+		document.getElementById("demo3").style.color = "red";
+		document.getElementById("demo3").style.backgroundColor = "yellow";        
+	}
+	</script>
+
+	<button type="button" onclick="myFunction()">Click Me!</button>
+	
+	<h1>JavaScript can change HTML attributes</h1>
+	
+	<script>
+	function light(sw) {
+		var pic;
+		if (sw == 0) {
+			pic = "pic_bulboff.gif"
+		} else {
+			pic = "pic_bulbon.gif"
+		}
+		document.getElementById('lightbulbimage').src = pic;
+	}
+	</script>
+
+	<img id="lightbulbimage" src="pic_bulboff.gif" width="100" height="180">
+
+	<p>
+	<button type="button" onclick="light(1)">Light On</button>
+	<button type="button" onclick="light(0)">Light Off</button>
+	</p>
+
+	<h1>HTML noscript Tag</h1>
+	<p>The noscript tag is used to provide an alternate content for users that have disabled scripts
+    	in their browser or have a browser that doesn't support client-side scripts
+	</p>
+	
+	<noscript>Sorry, your browser does not support JavaScript!</noscript>
 	
 </body>
 </html>

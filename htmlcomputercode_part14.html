@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Computer Code</title>
+	<meta charset="UTF-8">
+	<style>
+	table {
+		font-family: arial, sans-serif;
+		border-collapse: collapse;
+		width: 100%;
+		border-spacing: 15px;
+		
+	}
+
+	td, th {
+		border: 1px solid #dddddd;
+		text-align: left;
+		padding: 8px;
+	}
+
+	tr:nth-child(even) {
+		background-color: #dddddd;
+	}
+</style>
+</head>
+
+<body>
+	<h1>Computer Code Elements</h1>
+	<p>Some programming code using the HTML code element</p>
+	<p>The HTML code element defines a fragment of computer code</p>
+	
+	<code>
+	x = 5;<br>
+	y = 6;<br>
+	z = x + y;
+	</code>
+	
+	<p>Notice that the code element does not preserve extra whitespace and line-breaks.
+	To fix this, you can put the code element inside a pre element:</p>
+	<pre>
+	<code>
+	x = 5;	
+	if (x == 77)
+	{
+		hello_world(x);
+	}
+	y = 6;
+	z = x + y;
+	</code>
+	</pre>
+	
+	<h1>Keyboard Input</h1>
+	<p>The HTML kbd element represents user input, like keyboard input or voice commands.
+		Text surrounded by kbd tags is typically displayed in the browser's default monospace font
+	</p>
+	
+	<p>Save the document by pressing <kbd>Ctrl + S</kbd></p> 
+	 
+	<h1> samp For Program Output</h1>
+
+	<p>The HTML samp element represents output from a program or computing system.
+		Text surrounded by samp tags is typically displayed in the browser's default monospace font.
+	</p>
+	
+	<p>The samp element represents output from a program or computing system:</p>
+
+	<p>If you input wrong value, the program will return <samp>Error!</samp></p>
+	
+	<h1>HTML var For Variables</h1>
+
+	<p>The HTML var element defines a variable.
+		The variable could be a variable in a mathematical expression or a variable in programming context:</p>
+
+	<p>Einstein wrote: <var>E</var> = <var>mc</var><sup>2</sup>.</p>
+	
+	<h1>HTML Entities</h1>
+	<p>Character entities are used to display reserved characters in HTML.</p>
+	
+	<table class="w3-table-all notranslate">
+    <tr>
+      <th style="height: 29px">Result</th>
+      <th>Description</th>
+      <th>Entity Name</th>
+      <th>Entity Number</th>
+    </tr>
+    <tr>
+      <td style="height: 29px"></td>
+      <td style="height: 29px">non-breaking space</td>
+      <td style="height: 29px">&amp;nbsp;</td>
+      <td style="height: 29px">&amp;#160;</td>
+    </tr>
+    <tr>
+      <td>&lt;</td>
+      <td>less than</td>
+      <td>&amp;lt;</td>
+      <td>&amp;#60;</td>
+    </tr>
+    <tr>
+      <td>&gt;</td>
+      <td>greater than</td>
+      <td>&amp;gt;</td>
+      <td>&amp;#62;</td>
+    </tr>
+    <tr>
+      <td>&amp;</td>
+      <td>ampersand</td>
+      <td>&amp;amp;</td>
+      <td>&amp;#38;</td>
+    </tr>
+    <tr>
+      <td>&quot;</td>
+      <td>double quotation mark </td>
+      <td>&amp;quot;</td>
+      <td>&amp;#34;</td>
+    </tr>
+    <tr>
+      <td>&apos;</td>
+      <td>single quotation mark (apostrophe) </td>
+      <td>&amp;apos;</td>
+      <td>&amp;#39;</td>
+    </tr>
+    <tr>
+      <td>&cent;</td>
+      <td>cent</td>
+      <td>&amp;cent;</td>
+      <td>&amp;#162;</td>
+    </tr>
+    <tr>
+      <td>&pound;</td>
+      <td>pound</td>
+      <td>&amp;pound;</td>
+      <td>&amp;#163;</td>
+    </tr>
+    <tr>
+      <td>&yen;</td>
+      <td>yen</td>
+      <td>&amp;yen;</td>
+      <td>&amp;#165;</td>
+    </tr>
+    <tr>
+      <td>&euro;</td>
+      <td>euro</td>
+      <td>&amp;euro;</td>
+      <td>&amp;#8364;</td>
+    </tr>
+    <tr>
+      <td>&copy;</td>
+      <td>copyright</td>
+      <td>&amp;copy;</td>
+      <td>&amp;#169;</td>
+    </tr>
+    <tr>
+      <td>&#174;</td>
+      <td>registered trademark</td>
+      <td>&amp;reg;</td>
+      <td>&amp;#174;</td>
+    </tr>
+    </table>
+	
+	<h1>Example</h1>
+	<p>Using entity Name: &lt; &gt; &amp; &quot; &apos; &cent; &pound; &yen; &euro; &copy; &reg;</p>
+	
+	<p>Using Entity Number: &#160; &#60; &#62; &#38; &#34; &#39; &#162; &#163; &#8364; &#169; &#174;</p>
+	
+	<h1>Non-breaking Space</h1>
+
+	<p>A common character entity used in HTML is the non-breaking space: &amp;nbsp;<br>
+		A non-breaking space is a space that will not break into a new line.
+		Two words separated by a non-breaking space will stick together (not break into a new line). This is handy when breaking the words might be disruptive.
+	</p>
+
+	<h1>HTML Symbol Entities</h1>
+	<p>To add such symbols to an HTML page, you can use an HTML entity name.
+	If no entity name exists, you can use an entity number, a decimal, or hexadecimal reference.
+	</p>
+	
+	<p>I will display &euro;</p>
+	<p>I will display &#8364;</p>
+	<p>I will display &#x20AC;</p> 
+
+</body>
+</html>

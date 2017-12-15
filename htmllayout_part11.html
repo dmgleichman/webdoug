@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<title>Layout</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="My work going through tutorials">
+	<meta name="keywords" content="HTML, CSS, XML, JavaScript, PHP">
+	<meta name="author" content="Doug Gleichman">
+
+	<style>
+	div.container {
+		width: 100%;
+		border: 1px solid gray;
+	}
+
+	header, footer {
+		padding: 1em;
+		color: white;
+		background-color: black;
+		clear: left;
+		text-align: center;
+	}
+
+	nav {
+		float: left;
+		max-width: 160px;
+		margin: 0;
+		padding: 1em;
+	}
+
+	nav ul {
+		list-style-type: none;
+		padding: 0;
+	}
+	   
+	nav ul a {
+		text-decoration: none;
+	}
+
+	article {
+		margin-left: 170px;
+		border-left: 1px solid gray;
+		padding: 1em;
+		overflow: hidden;
+	}
+</style>
+
+
+
+</head>
+
+<body>
+	<div class="container">
+
+	<header>
+	   <h1>City Gallery</h1>
+	   <p>Example of using layout tools. This uses float</p>
+	</header>
+	  
+	<nav>
+	  <ul>
+		<li><a href="#">London</a></li>
+		<li><a href="#">Paris</a></li>
+		<li><a href="#SVGTests">SVG</a></li>
+	  </ul>
+	</nav>
+
+	<article>
+	  <h1>London</h1>
+	  <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+	  <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+	</article>
+
+
+
+	<article id=#SVGTests>
+		<h1>My first SVG</h1>
+
+		<svg width="400" height="100">
+		   <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+		   <rect x="150" y="0" width="80" height="50" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
+		   Sorry, your browser does not support inline SVG.
+		</svg> 
+	</article>
+	<footer>Copyright &copy; Mr. Big</footer>
+	</div>
+
+	
+	
+</body>
+</html>

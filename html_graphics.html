@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<title>Doug's Web Site</title>
+	<meta charset="UTF-8">
+</head>
+
+<body>
+    <h1>Welcome</h1>
+	<p>Here are some simple examples from tutorials</p> 
+	<h2>Graphics</h2>
+
+	<html>
+	<body>
+
+	<h1>My first SVG</h1>
+
+	<svg width="100" height="100">
+	  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+	</svg>
+
+	<svg width="400" height="110">
+	  <rect width="300" height="100" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
+	  Sorry, your browser does not support inline SVG.  
+	</svg>
+	
+	<svg width="400" height="180">
+	  <rect x="50" y="20" width="150" height="150" style="fill:blue;stroke:pink;stroke-width:5;fill-opacity:0.1;stroke-opacity:0.9" />
+	</svg>
+	
+	<svg height="60" width="200">
+	  <text x="0" y="15" fill="red" transform="rotate(30 20,40)">I love SVG</text>
+	  Sorry, your browser does not support inline SVG.
+	</svg>
+
+	<h1>Using Canvas</h1>
+		
+	<canvas id="myCanvas" width="200" height="100"
+	style="border:1px solid #c3c3c3;">
+	Your browser does not support the canvas element.
+	</canvas>
+
+	<script>
+	var canvas = document.getElementById("myCanvas");
+	var ctx = canvas.getContext("2d");
+	ctx.fillStyle = "#FF0000";
+	ctx.fillRect(0,0,150,75);
+	</script>
+	
+	<canvas id="myCanvas" width="200" height="100"
+	style="border:1px solid #d3d3d3;">
+	Your browser does not support the canvas element.
+	</canvas>
+
+	<script>
+
+	var canvas = document.getElementById("myCanvas");
+	var ctx = canvas.getContext("2d");
+	ctx.moveTo(0,0);
+	ctx.lineTo(200,100);
+	ctx.stroke();
+
+	</script>
+
+
+	</body>
+	</html>
+
+</body>
+</html>

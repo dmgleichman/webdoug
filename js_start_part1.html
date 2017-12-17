@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<title>Doug's Web Site</title>
+	<meta charset="UTF-8">
+</head>
+
+<body>
+    <h1>Javascript</h1>
+	<p>Here are some simple examples from tutorials</p> 
+	
+	<h2>What Can JavaScript Do?</h2>
+
+	<p id="demo">JavaScript can change HTML content.</p>
+
+	<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+
+	<p id="demoStyles">JavaScript can change the style of an HTML element.</p>
+
+	<button type="button" onclick="document.getElementById('demoStyles').style.fontSize='35px'">Click Me!</button>
+
+	<h2>Window Alert</h2>
+	<p>You can make a popup window</p>
+	<script>
+//		window.alert("This is a window alert");
+	</script>
+
+	<h2>JavaScript Expressions</h2>
+
+	<p>Expressions compute to values.</p>
+
+	<p id="demoExpVal"></p>
+
+	<script>
+	document.getElementById("demoExpVal").innerHTML = 5 * 10;
+	</script>
+	
+	<h2>JavaScript Statements</h2>
+
+	<p>JavaScript code blocks are written between { and }</p>
+
+	<button type="button" onclick="myFunction()">Click Me!</button>
+
+	<p id="demo1"></p>
+	<p id="demo2"></p>
+
+	<script>
+	function myFunction() {
+		document.getElementById("demo1").innerHTML = "Hello Dolly!";
+		document.getElementById("demo2").innerHTML = "How are you?";
+	}
+	</script>
+
+	<h2>JavaScript typeof</h2>
+	<p>The typeof operator returns the type of a variable or an expression.</p>
+
+	<p id="demoTypeof"></p>
+
+	<script>
+	document.getElementById("demoTypeof").innerHTML = 
+	typeof "" + "<br>" +
+	typeof "John" + "<br>" + 
+	typeof "John Doe" + "<br>"+
+	typeof 0 + "<br>" + 
+	typeof 314 + "<br>" +
+	typeof 3.14 + "<br>" +
+	typeof (3) + "<br>" +
+	typeof (3 + 4);
+	
+	</script>
+
+	
+	<h2>Creating a JavaScript Object.</h2>
+
+	<p id="demoObject"></p>
+
+	<script>
+	var person = {
+		firstName : "John",
+		lastName  : "Doe",
+		age       : 50,
+		eyeColor  : "blue"
+	};
+
+	document.getElementById("demoObject").innerHTML =
+	person.firstName + " " + person.lastName + " is " + person.age + " years old.";
+	</script>
+
+	
+	<p>Click the button to display the date.</p>
+
+	<button onclick="displayDate()">The time is?</button>
+
+	<script>
+	function displayDate() {
+		document.getElementById("demoDate").innerHTML = Date();
+	}
+
+	</script>
+
+	<p id="demoDate"></p>
+
+</body>
+</html>

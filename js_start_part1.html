@@ -22,9 +22,22 @@
 
 	<h2>Window Alert</h2>
 	<p>You can make a popup window</p>
+	
+	<button type="button" onclick="window.alert('This is a one line window alert\nInside button element');">One Line Open Window Alert</button>
+
+	<p>Using function()</p>
+	
+	<button type="button" onclick="openWindowAlert()">Open Window Alert with Function</button>  
+	
 	<script>
-//		window.alert("This is a window alert");
+		function openWindowAlert() {
+			window.alert("This is a window alert\nInside a defined function");
+		}
+	
 	</script>
+	
+	
+	
 
 	<h2>JavaScript Expressions</h2>
 
@@ -91,15 +104,39 @@
 	<p>Click the button to display the date.</p>
 
 	<button onclick="displayDate()">The time is?</button>
-
+	<p id="demoDate"></p>
+	
 	<script>
 	function displayDate() {
 		document.getElementById("demoDate").innerHTML = Date();
 	}
 
 	</script>
+	
+	
+	<h2>change HTML attributes.</h2>
 
-	<p id="demoDate"></p>
+	<p>In this case JavaScript changes the src (source) attribute of an image.</p>
+
+	<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+	<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+	<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+
+	
+	
+	<h2>External JavaScript</h2>
+
+	<p id="demoPara">A Paragraph.</p>
+
+	<button type="button" onclick="changeAParagraph('demoPara')">Try it</button>
+
+	<p>(changeAParagraph() is stored in an external file called "myScript.js")</p>
+
+	<script src="myScript.js"></script>
+
 
 </body>
 </html>

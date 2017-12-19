@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<title>Doug's Web Site</title>
+	<meta charset="UTF-8">
+</head>
+
+<body>
+    <h1>JavaScript and Graphics</h1>
+	<p>Draw with JavaScript</p> 
+	
+	<h2>Using Canvas</h2>
+
+	
+	<canvas id="mainCanvas" width="800" height="600"
+	style="border:1px solid #c3c3c3;">
+	Your browser does not support the canvas element.
+	</canvas>
+	
+	
+	<script src="myScript.js"></script>
+	<script>
+	var myCanvasId = "mainCanvas";
+	var canvas = document.getElementById(myCanvasId);
+	var ctx = canvas.getContext("2d");
+	var color = "#FF8000";
+	ctx.fillStyle = color;
+	ctx.fillRect(0,0,150,75);
+	
+	color = "#80ff00";
+	ctx.fillStyle = color;
+	ctx.fillRect(100,200,350,275);	
+	
+	var x = 500;
+	var y = 150;
+	ctx.fillStyle = color;
+	ctx.fillRect(x,y,50,50);
+
+	x += 100;
+	y += 100;
+	color = "#00ff80";
+	drawSquare(myCanvasId, x, y, color)
+	
+	color = "#ff00ff";
+	x = 50;
+	for (i=0;i<5;i++)
+	{
+		color = rgbColor(255, 0, 255-(i*50)); 
+		drawSquare(myCanvasId,x+(100*i), 300, color);
+	}
+		
+	</script>
+	
+</body>
+</html>

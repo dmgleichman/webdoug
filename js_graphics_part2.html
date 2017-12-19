@@ -52,5 +52,51 @@
 		
 	</script>
 	
+	<h2>ColorChart</h2>
+	
+	<canvas id="colorCanvas" width="800" height="600"
+	style="border:1px solid #c3c3c3;">
+	Your browser does not support the canvas element.
+	</canvas>
+	
+	<script>
+	var myCanvasId = "colorCanvas";
+	var canvas = document.getElementById(myCanvasId);
+	var ctx = canvas.getContext("2d");
+	var color = "#000000";
+	ctx.fillStyle = color;
+	ctx.fillRect(0,0,800,600);
+	for (i=0;i<5;i++)
+	{
+		color = rgbScaled(i * 0.25, i * 0.25, i * 0.25); 
+		drawSquare(myCanvasId,x+(100*i), 100, color);
+	}	
+
+	for (i=0;i<5;i++)
+	{
+		color = rgbScaled(1.0, i * 0.25, i * 0.25); 
+		drawSquare(myCanvasId,x+(100*i), 200, color);
+	}	
+	
+	for (i=0;i<5;i++)
+	{
+		color = rgbColor(255, 0, 255-(i*50)); 
+		drawSquare(myCanvasId,x+(100*i), 300, color);
+	}
+		
+	for (i=0;i<5;i++)
+	{
+		color = rgbScaled(1, i * 0.2, 0); 
+		drawSquare(myCanvasId,x+(100*i), 400, color);
+	}
+	for (i=0;i<5;i++)
+	{
+		color = rgbScaled(1 - (i*0.2), i * 0.2, 0); 
+		drawSquare(myCanvasId,x+(100*i), 500, color);
+	}	
+	
+	</script>
+	
+	
 </body>
 </html>

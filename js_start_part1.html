@@ -136,6 +136,174 @@
 	<p>(changeAParagraph() is stored in an external file called "myScript.js")</p>
 
 	<script src="myScript.js"></script>
+	
+	<h2>toString()</h2>
+
+	<p>The toString() method returns an array as a comma separated string:</p>
+
+	<p id="demotostring"></p>
+
+	<script>
+	var fruits = ["Banana", "Orange", "Apple", "Mango"];
+	document.getElementById("demotostring").innerHTML = fruits.toString();
+	</script>
+
+	<h2>JavaScript Loops</h2>
+
+	<p id="demoloop"></p>
+
+	<script>
+	var cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+	var text = "";
+	var i;
+	for (i = 0; i < cars.length; i++) {
+		text += cars[i] + "<br>";
+	}
+	document.getElementById("demoloop").innerHTML = text;
+	</script>
+	
+
+	<p id="demoforloop"></p>
+
+	<script>
+	var text = "";
+	var i;
+	for (i = 0; i < 5; i++) {
+		text += "The number is " + i + "<br>";
+	}
+	document.getElementById("demoforloop").innerHTML = text;
+	</script>
+
+	<h2>JavaScript while</h2>
+
+	<p id="demowhile"></p>
+
+	<script>
+	var text = "";
+	var i = 0;
+	while (i < 10) {
+		text += "<br>The number is " + i;
+		i++;
+	}
+	document.getElementById("demowhile").innerHTML = text;
+	</script>
+
+	<h2>JavaScript do ... while</h2>
+
+	<p id="demodowhile"></p>
+
+	<script>
+	var text = ""
+	var i = 0;
+
+	do {
+		text += "<br>The number is " + i;
+		i++;
+	}
+	while (i < 10);  
+
+	document.getElementById("demodowhile").innerHTML = text;
+	</script>
+	
+	<h2>break</h2>
+	<p>A loop with a break. Stops after 3</p>
+
+	<p id="demobreak"></p>
+
+	<script>
+	var text = "";
+	var i;
+	for (i = 0; i < 10; i++) {
+		if (i === 3) { break; }
+		text += "The number is " + i + "<br>";
+	}
+	document.getElementById("demobreak").innerHTML = text;
+	</script>
+
+	<h2>continue</h2>
+	
+	<p>A loop which will skip the step where i = 3.</p>
+
+	<p id="democontinue"></p>
+
+	<script>
+	var text = "";
+	var i;
+	for (i = 0; i < 10; i++) {
+		if (i === 3) { continue; }
+		text += "The number is " + i + "<br>";
+	}
+	document.getElementById("democontinue").innerHTML = text;
+	</script>
+
+	<h2>The JavaScript typeof Operator</h2>
+
+	<p>The typeof operator returns the type of a variable, object, function or expression.</p>
+
+	<p id="demotypeof"></p>
+
+	<script>
+	document.getElementById("demotypeof").innerHTML = 
+		typeof "john" + "<br>" +
+		typeof 3.14 + "<br>" +
+		typeof NaN + "<br>" +
+		typeof false + "<br>" +
+		typeof [1,2,3,4] + "<br>" +
+		typeof {name:'john', age:34} + "<br>" +
+		typeof new Date() + "<br>" +
+		typeof function () {} + "<br>" +
+		typeof myCar + "<br>" +
+		typeof null;
+	</script>
+
+	<h2>The JavaScript constructor Property</h2>
+
+	<p>The constructor property returns the constructor function for a variable or an 
+	object.</p>
+
+	<p id="democonstructor"></p>
+
+	<script>
+	document.getElementById("democonstructor").innerHTML = 
+		"john".constructor + "<br>" +
+		(3.14).constructor + "<br>" +
+		false.constructor + "<br>" +
+		[1,2,3,4].constructor + "<br>" +
+		{name:'john', age:34}.constructor + "<br>" +
+		new Date().constructor + "<br>" +
+		function () {}.constructor;
+	</script>
+
+	<h2>Switch Statement</h2>
+	
+	<p id="demoswitch"></p>
+
+	<script>
+	var day;
+	switch (new Date().getDay()) {
+		case 0:
+			day = "Sunday";
+			break;
+		case 1:
+			day = "Monday";
+			break;
+		case 2:
+			day = "Tuesday";
+			break;
+		case 3:
+			day = "Wednesday";
+			break;
+		case 4:
+			day = "Thursday";
+			break;
+		case 5:
+			day = "Friday";
+			break;
+		case  6:
+			day = "Saturday";
+	}
+	document.getElementById("demoswitch").innerHTML = "Today is " + day;
+	</script>
 
 
 </body>

@@ -11,6 +11,26 @@ function drawSquare(id, x, y, color) {
 	ctx.fillRect(x,y,50,50);
 }	
 
+function drawHexagon(id, x, y, color) {
+	var canvas = document.getElementById(id);
+	var ctx = canvas.getContext("2d");
+	var size = 50.0;
+	ctx.fillStyle = color;
+	
+
+	ctx.beginPath();
+	ctx.moveTo(x+(size*0.5), y+(size*0));
+	ctx.lineTo(x+(size*1.5), y+(size*0));
+	ctx.lineTo(x+(size*2.0), y+(size*0.8660254));
+	ctx.lineTo(x+(size*1.5), y+(size*1.7320508));
+	ctx.lineTo(x+(size*0.5), y+(size*1.7320508));
+	ctx.lineTo(x+(size*0), y+(size*0.8660254));
+	ctx.lineTo(x+(size*0.5), y+(size*0));
+	ctx.closePath();
+	ctx.fill();
+	
+}
+
 function rgbColor(r, g, b){
   r = Math.floor(r);
   g = Math.floor(g);

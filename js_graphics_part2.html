@@ -49,6 +49,21 @@
 		color = rgbColor(255, 0, 255-(i*50)); 
 		drawSquare(myCanvasId,x+(100*i), 300, color);
 	}
+	
+	var c2 = canvas.getContext('2d');
+	c2.fillStyle = '#f00';
+	c2.beginPath();
+	c2.moveTo(0, 0);
+	c2.lineTo(100,50);
+	c2.lineTo(50, 100);
+	c2.lineTo(0, 90);
+	c2.closePath();
+	c2.fill();
+	
+	var size = 50;
+	var hexScale = 0.8660508;
+	drawHexagon(myCanvasId, 300, 20, "#208000");
+	drawHexagon(myCanvasId, 375, 20+(size*hexScale*1), "#2020c0");
 		
 	</script>
 	

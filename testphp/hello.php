@@ -162,27 +162,20 @@
 	echo $_SERVER['SCRIPT_NAME'];
 	?>
 	
-	
-	<h2>$_REQUEST</h2>
-	<p>PHP $_REQUEST is used to collect data after submitting an HTML form.</p>
-	<form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
-	  Name: <input type="text" name="fname">
-	  <input type="submit">
-	</form>
+	<h2>$_GET</h2>
+	<p>PHP $_GET can also be used to collect form data after submitting an HTML form with method="get".
+		$_GET can also collect data sent in the URL. 
+	</p>
+		
+	<p>When a user clicks on the link "Test $GET", the parameters "subject" and "web" are sent to "test_get.php", 
+		and you can then access their values in "test_get.php" with $_GET.
+	</p>
+	<a href="test_get.php?subject=PHP&web=W3schools.com">Test $GET</a>
 
-	<?php
-	if ($_SERVER["REQUEST_METHOD"] == "POST") {
-		// collect value of input field
-		$name = htmlspecialchars($_REQUEST['fname']);
-		if (empty($name)) {
-			echo "Name is empty";
-		} else {
-			echo $name;
-		}
-	}
-?>
+	<p>or for something completely different:</p>
+	<a href="test_get.php?subject=Electrical Engineering&web=University of California, Los Angeles">Study Elsewhere</a>
 	
-
+	<p>Hover mouse over link to see parameters</p>
 	
 
  </body>

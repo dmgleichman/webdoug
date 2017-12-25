@@ -1,12 +1,16 @@
+<!DOCTYPE HTML>
 <html>
  <head>
   <title>PHP Test</title>
  </head>
  <body>
- <?php echo '<p>Hello World</p>'; ?> 
+	<h1>echo Statement</h1>
+	
+	<?php echo '<p>Hello World</p>'; ?> 
  
- 
-  <?php
+	<h1>Functions</h1>
+	
+	<?php
 	function writeMsg() {
 		echo "An echo statement inside a function to say: Hello world!";
 	}
@@ -54,7 +58,7 @@
 	echo "7 + 13 = " . sum(7, 13) . "<br>";
 	echo "2 + 4 = " . sum(2, 4);
 
-	echo "<h2>Arrays</h2>";
+	echo "<h1>Arrays</h1>";
 
 	$cars = array("Volvo", "BMW", "Toyota");
 	echo "I like " . $cars[0] . ", " . $cars[1] . " and " . $cars[2] . ".";

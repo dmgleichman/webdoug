@@ -18,5 +18,8 @@ Most code is from [w3schools](https://www.w3schools.com/) with variations.
 4. From your browser goto localhost/webdoug
 5. You should see intex.html
 
-
+# Folders
+* testphp - Tests for PHP
+* testci - Tests for CodeIgniter
+* testcgi - A little test for Perl
 

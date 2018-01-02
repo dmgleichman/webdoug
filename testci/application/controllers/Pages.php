@@ -1,8 +1,6 @@
 <?php
 class Pages extends CI_Controller {
 	
-	
-	private $myCopyright = "Doug Gleichman";
 		
 	public function view($page = 'home')
 	{
@@ -16,7 +14,6 @@ class Pages extends CI_Controller {
 		}
 		
 		$data['title'] = ucfirst($page);  // Capitalize the first charcter
-		$data['copy'] = $this->myCopyright;
 		
 		$this->load->view('templates/header', $data);
 		$this->load->view('pages/'.$page, $data);

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<title>SQL Setup and Usage</title>
+	<meta charset="UTF-8">
+</head>
+
+<body>
+
+	<h1>SQL</h1>
+<!-- About SQL -->
+	<h2>Setup</h2>
+	
+	<p>Manage your database with <a href="http://localhost/phpmyadmin/">phpMyAdmin running on Localhost</a></p>
+
+	<h2>Usage</h2>
+	
+	<h3>CodeIgniter Tutorial - News section</h3>
+
+	<h3>Make a New Database</h3>
+	
+	<p>From the CodeIgniter tutorial number 2, News section, from User guide</p>
+	<p>In phpMyAdmin click new, then in the Create database, Database name field type dougtest1. Push Create button.<p>
+	<p>This made a new database named dougtest1.</p>
+
+	<h3>Make a New Table</h3>
+	
+	<p>From CodeIgniter Tutorial - News section -- it asks you to make this database:</p>
+	<pre>
+	CREATE TABLE news (
+        id int(11) NOT NULL AUTO_INCREMENT,
+        title varchar(128) NOT NULL,
+        slug varchar(128) NOT NULL,
+        text text NOT NULL,
+        PRIMARY KEY (id),
+        KEY slug (slug)
+	);
+	</pre>
+
+	<p>Create a table called news. In phpMyAdmin, select dougtest1, the click the SQL tab. 
+	Copy this text and paste it into the SQL query text window. Press the Go button.
+	</p>
+
+	<h3>Insert Data Into the Table</h3>
+	
+	<p>Insert items into news table. Under database dougtest1, Structure tab, click on the Table news.
+	You should see the column names. Select the Insert tab.
+	Click Insert tab. Under the Value column, Enter id of 1, title of "Hello World One" (don't include quotes), slug hello_1, and test of "Hi World!" (again no quotes.)
+	Press the Go button.
+	</p>
+	<p>You can go back to the Browse tab and see the data in your table. Go back to the Insert tab and add more rows. 
+	</p>
+	
+	<p>Now go to the <a href="testci/index.php/news">News section</a> tutorial page and view your articles</p>
+	
+</body>
+</html>

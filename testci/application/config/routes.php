@@ -60,7 +60,15 @@ $route['default_controller'] = 'pages/view';
 $route['(:any)'] = 'pages/view/$1';
 */
 
-/* Second Tutorial - News section */
+/* Second Tutorial - News section 
+$route['news/(:any)'] = 'news/view/$1';
+$route['news'] = 'news';
+$route['(:any)'] = 'pages/view/$1';
+$route['default_controller'] = 'pages/view';
+*/
+
+/* Third Tutorial - Create news item */
+$route['news/create'] = 'news/create';
 $route['news/(:any)'] = 'news/view/$1';
 $route['news'] = 'news';
 $route['(:any)'] = 'pages/view/$1';

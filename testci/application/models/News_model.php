@@ -32,5 +32,11 @@ class News_model extends CI_Model {
 
 			return $this->db->insert('news', $data);
 		}
+		
+		public function get_author()
+		{
+			return "Doug Gleichman";
+		}
+		
 
 }

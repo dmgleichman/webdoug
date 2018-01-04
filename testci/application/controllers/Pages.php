@@ -2,7 +2,7 @@
 class Pages extends CI_Controller {
 	
 		
-	public function view($page = 'home')
+	public function viewer($page = 'home')
 	{
 		//echo "Hello this my page<br>";
 		//echo "Call with http://localhost/webdoug/testci/index.php/Pages/view/hello";
@@ -15,7 +15,12 @@ class Pages extends CI_Controller {
 		
 		$data['title'] = ucfirst($page);  // Capitalize the first charcter
 		
-		$this->load->view('templates/header', $data);
+		$data['name'] = "My name is Doug!";
+		
+
+		$this->load->view('templates/header_name', $data);
+
+				
 		$this->load->view('pages/'.$page, $data);
 		$this->load->view('templates/footer', $data);
 		

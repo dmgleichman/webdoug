@@ -2,6 +2,7 @@
 
 <p>This is the views/news/index.php file</p>
 <p>Data is passed to this view through a variable called allnews</p>
+<p>Author is: <?php echo $news_author; ?></p>
 
 <?php foreach ($allnews as $news_item_one): ?>
 

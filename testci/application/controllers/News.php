@@ -12,7 +12,10 @@ class News extends CI_Controller {
         {
 			$data['allnews'] = $this->news_model->get_news();
 			$data['title'] = 'News archive';
-
+			
+			$na = $this->news_model->get_author();
+			$data['news_author'] = $na;
+			
 			$this->load->view('templates/header', $data);
 			$this->load->view('news/index', $data);
 			$this->load->view('templates/footer');
@@ -21,8 +24,14 @@ class News extends CI_Controller {
 
         public function view($slug = NULL)
         {
+			echo "this is the view function";
+			
 			$data['news_item_from_slug'] = $this->news_model->get_news($slug);
 	
+			$na = $this->news_model->get_author();
+			$data['news_author'] = $na;
+			
+			
 			if (empty($data['news_item_from_slug']))
 			{
 					show_404();

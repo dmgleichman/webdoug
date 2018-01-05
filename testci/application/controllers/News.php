@@ -30,7 +30,7 @@ class News extends CI_Controller {
 	
 			$na = $this->news_model->get_author();
 			$data['news_author'] = $na;
-			
+			$data['news_slug'] = $slug;
 			
 			if (empty($data['news_item_from_slug']))
 			{

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<title>Doug's Web Site</title>
+	<meta charset="UTF-8">
+</head>
+
+<body>
+    <h1>JavaScript Objects and Data</h1>
+	
+	<h2>Data Types</h2>
+	<p>When adding a string and a number, JavaScript will treat the number as a string.</p>
+
+	<p id="demostr"></p>
+
+	<script>
+	var x = "Volvo" + 16;
+	document.getElementById("demostr").innerHTML = x;
+	</script>
+	
+	<h2>JavaScript Booleans</h2>
+
+	<p>Booleans can have two values: true or false:</p>
+
+	<p id="demobool"></p>
+
+	<script>
+	var x = 5;
+	var y = 5;
+	var z = 6;
+	document.getElementById("demobool").innerHTML =
+	(x == y) + "<br>" + (x == z);
+	</script>
+		
+	<h2>JavaScript Arrays</h2>
+
+	<p>Array indexes are zero-based, which means the first item is [0].</p>
+
+	<p id="demoarray"></p>
+
+	<script>
+	var cars = ["Saab","Volvo","BMW"];
+
+	document.getElementById("demoarray").innerHTML = cars[0];
+	</script>
+	
+	<h2>JavaScript Functions</h2>
+
+	<p>This example calls a function to convert from Fahrenheit to Celsius:</p>
+	<p id="demofunc"></p>
+
+	<script>
+	var fahr = 77;
+	function toCelsius(f) {
+		return (5/9) * (f-32);
+	}
+	document.getElementById("demofunc").innerHTML = 
+	"The temperature " + fahr + " Fahrenheit is "+ toCelsius(fahr) + " Celsius";
+	</script>
+
+
+	<h2>Creating a JavaScript Object.</h2>
+
+	<p id="demotype"></p>
+
+	<script>
+	var car = {type:"Fiat", model:"500", color:"white"};
+	document.getElementById("demotype").innerHTML = car.type;
+	</script>	
+
+	
+	<p>Creating a JavaScript Object.</p>
+
+	<p id="demonameage"></p>
+
+	<script>
+	var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+
+	document.getElementById("demonameage").innerHTML =
+	person.firstName + " is " + person.age + " years old.";
+	</script>
+
+	<h2>Access and object</h2>
+	<p>	There are two different ways to access an object property: 	</p>
+	<p>You can use person.property</p>
+	<p id="demoperson"></p>
+
+	<script>
+	var person = {
+		firstName: "John",
+		lastName : "Doe",
+		id       :  5566
+	};
+	document.getElementById("demoperson").innerHTML =
+	person.firstName + " " + person.lastName;
+	</script>
+	
+	<p>or person["property"].</p>
+	
+	<p id="demoperson2"></p>
+
+	<script>
+	var person = {
+		firstName: "John",
+		lastName : "Doe",
+		id       :  5566
+	};
+	document.getElementById("demoperson2").innerHTML =
+	person["firstName"] + " " + person["lastName"];
+	</script>
+
+	
+	<h2>Creating and using an object method.</h2>
+
+	<p>An object method is a function definition, stored as a property value.</p>
+
+	<p id="demoMethod"></p>
+
+	<script>
+	var person = {
+		firstName: "John",
+		lastName : "Doe",
+		id       : 5566,
+		fullName : function() {
+		   return this.firstName + " " + this.lastName;
+		}
+	};
+
+	document.getElementById("demoMethod").innerHTML = person.fullName();
+	</script>
+
+	<h2>Scope</h2>
+	
+	<p>A GLOBAL variable can be accessed from any script or function.</p>
+
+	<p id="demoGlobal"></p>
+
+	<script>
+	var carName = "Volvo";
+	myFunction();
+
+	function myFunction() {
+		document.getElementById("demoGlobal").innerHTML =
+		"I can display " + carName;
+	}
+	</script>
+
+
+	<h2>Events</h2>
+	
+	<p>Click the button to display the date.</p>
+
+	<button onclick="displayDate()">The time is?</button>
+
+	<script>
+	function displayDate() {
+		document.getElementById("demodate").innerHTML = Date();
+	}
+	</script>
+
+	<p id="demodate"></p>
+
+
+	<h2>Strings</h2>
+	<p>Special characters</p>
+	
+	<p id="demospecial"></p>
+
+	<script>
+
+	var x = 'It\'s alright';
+	var y = "We are the so-called \"Vikings\" from the north.";
+
+	document.getElementById("demospecial").innerHTML = x + "<br>" + y; 
+
+	</script>
+
+	
+	<p>
+	You can break a code line within a text string with a backslash.
+	</p>
+
+	<p id="demobackslash"></p>
+
+	<script>
+	document.getElementById("demobackslash").innerHTML = "Hello \
+	Dolly!";
+	</script>
+	
+	
+	<p>
+	The safest way to break a code line in a string is using string addition.
+	</p>
+
+	<p id="demostradd"></p>
+
+	<script>
+	document.getElementById("demostradd").innerHTML = "Hello " +
+	"Dolly!";
+	</script>
+
+	<h2>JavaScript String Properties</h2>
+
+	<p>The length property returns the length of a string:</p>
+
+	<p id="demoLength"></p>
+
+	<script>
+	var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	document.getElementById("demoLength").innerHTML = txt.length;
+	</script>
+	
+	<h2>JavaScript String Methods</h2>
+	
+	<p>The indexOf() method returns the position of the first occurrence of a specified text:</p>
+
+	<p id="demoIndex"></p>
+
+	<script>
+	var str = "Please locate where 'locate' occurs!";
+	var pos = str.indexOf("locate");
+	document.getElementById("demoIndex").innerHTML = str + "<br>" + " It is " + pos;
+	</script>
+	
+	<p>The lastIndexOf() method returns the position of the last occurrence of a specified text:</p>
+
+	<p id="demoLast"></p>
+
+	<script>
+	var str = "Please locate where 'locate' occurs!";
+	var pos = str.lastIndexOf("locate");
+	document.getElementById("demoLast").innerHTML = str + "<br>" + " It is " + pos;
+	</script>
+
+
+	<p>The indexOf() method accepts a second parameter as the starting position for the search:</p>
+
+	<p id="demoSecond"></p>
+
+	<script>
+	var str = "Please locate where 'locate' occurs!";
+	var pos = str.indexOf("locate",15);
+	document.getElementById("demoSecond").innerHTML = str + "<br>" + " It is " + pos;
+	</script>
+	
+	<h2>Extracting String Parts</h2>
+	<h3>Slice()</h3>
+	
+	<p>The slice() method extract a part of a string
+	and returns the extracted parts in a new string:</p>
+
+	<p id="demoslice"></p>
+
+	<script>
+	var str = "Apple, Banana, Kiwi";
+	var res = str.slice(7,13);
+	document.getElementById("demoslice").innerHTML = res; 
+	</script>
+	
+	<p>If a parameter is negative, the position is counted from the end of the string.</p>
+
+	<p id="demoNegSlice"></p>
+
+	<script>
+	var str = "Apple, Banana, Kiwi";
+	var res = str.slice(-12,-6);
+	document.getElementById("demoNegSlice").innerHTML = res;
+	</script>
+
+	<p>If you omit the second parameter, the method will slice out the rest of the string:</p>
+	
+	<p id="demoOneParam"></p>
+
+	<script>
+	var str = "Apple, Banana, Kiwi";
+	var res = str.slice(7);
+	document.getElementById("demoOneParam").innerHTML = res;
+	</script>
+
+	
+	<p>or, counting from the end:</p>
+	
+	<p id="demoEndSlice"></p>
+
+	<script>
+	var str = "Apple, Banana, Kiwi";
+	var res = str.slice(-12) 
+	document.getElementById("demoEndSlice").innerHTML = res;
+	</script>	
+	
+</body>
+</html>

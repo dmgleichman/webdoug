@@ -3,7 +3,15 @@ class Blog extends CI_Controller {
 	
 	public function index()
 	{
-		echo 'Hello World!';
+		//echo 'Hello World!';
+		
+		$data['todo_list'] = array('Clean House', 'Call Mom', 'Run Errands');
+		$data['shopping_list'] = array('Milk', 'Eggs', 'Bread', 'Bananas');
+		
+		$data['title'] = "My Real Title";
+		$data['heading'] = "My Real Heading";
+		
+		$this->load->view('blog_view', $data);
 	}
 	
 	public function comments()

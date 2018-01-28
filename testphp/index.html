@@ -46,5 +46,31 @@
 	<p><a href="form_write_file.php">Combine Form with File Write</a> </p>
 	<p><a href="php_file_upload.php">File Upload</a> </p>
 	
+	<h1>Command Line</h1>
+	<p>PHP can be run from the command line.</p>
+	<p>First add <pre>
+	c:\xampp\php
+	</pre>to the path</p>
+	<p>Then, to run the little example, start a Command Prompt window and enter:
+	<pre>  
+	c:
+	cd \xampp\htdocs\webdoug\testphp
+	php little.php
+	</pre>
+	</p>
+	  
+	<h1>Sockets</h1>
+	<p>Enable sockets in PHP by changing the c:\xampp\php\php.ini file.</p>
+	<p>Remove the comment ; before the line <pre>
+	extension=php_sockets.dll</pre></p>
+	
+	<h2>UDP</h2>
+	<p>UPD sockets example from <a href="http://www.binarytides.com/udp-socket-programming-in-php/">BinaryTides UDP socket programming.</a></p>
+	<p>In one command prompt window, run: <pre>
+	php udp_server.php</pre></p>
+	<p>In another command prompt window, run: <pre>
+	php udp_client.php</pre></p>
+	<p>Might work better if run from two different computers?</p>
+	
 </body>
 </html>

@@ -1,20 +1,25 @@
 <?php
  
 /*
-    Simple php udp socket client
+    Simple php udp socket client, uses two ports and asks for computer to send to.
 	from: http://www.binarytides.com/udp-socket-programming-in-php/
 */
  
 //Reduce errors
 error_reporting(~E_WARNING);
- 
-$server = '127.0.0.1';
-//$server = '0.0.0.0';
 
-$porttx = 5420;
-$portrx = 5421;
+// client ports
+$porttx = 5420;	 // client to server port
+$portrx = 5421;  // server to client port
 
- 
+$serverrx = '0.0.0.0';		// receive from all
+
+// Enter computer or ip address 
+echo 'Enter name or ip addr of computer to talk to : ';
+$servertx = trim(fgets(STDIN));
+echo "Servertx is $servertx\n";
+
+// create the socket for receive	
 if(!($sockrx = socket_create(AF_INET, SOCK_DGRAM, 0)))
 {
     $errorcode = socket_last_error();
@@ -25,8 +30,8 @@ if(!($sockrx = socket_create(AF_INET, SOCK_DGRAM, 0)))
  
 echo "Socket created rx\n";
  
-// Bind the source address
-if( !socket_bind($sockrx, $server , $portrx) )
+// Bind the source address for receive
+if( !socket_bind($sockrx, $serverrx , $portrx) )
 {
     $errorcode = socket_last_error();
     $errormsg = socket_strerror($errorcode);
@@ -36,6 +41,7 @@ if( !socket_bind($sockrx, $server , $portrx) )
  
 echo "Socket bind rx OK \n";
  
+// create the socket for transmit
 if(!($socktx = socket_create(AF_INET, SOCK_DGRAM, 0)))
 {
     $errorcode = socket_last_error();
@@ -55,7 +61,7 @@ while(1)
     $input = fgets(STDIN);
      
     //Send the message to the server
-    if( ! socket_sendto($socktx, $input , strlen($input) , 0 , $server , $porttx))
+    if( ! socket_sendto($socktx, $input , strlen($input) , 0 , $servertx , $porttx))
     {
         $errorcode = socket_last_error();
         $errormsg = socket_strerror($errorcode);
@@ -72,5 +78,6 @@ while(1)
         die("Could not receive data: [$errorcode] $errormsg \n");
     }
      
-    echo "Reply : $reply";
+	// show the received data on the console 
+    echo "Reply from $from port $port : $reply";
 }

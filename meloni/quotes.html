@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Random Quote Generator</title>
+
+    <script type="text/javascript">
+      <!-- Hide the script from old browsers
+      function getQuote() {
+        // Create the arrays
+        var quotes = new Array(5);
+        var sources = new Array(5);
+
+        // Initialize the arrays with quotes
+        quotes[0] = "Optimism is the faith that leads to achievement.";
+        sources[0] = "Helen Keller";
+
+        quotes[1] = "If you don't like the road you're walking, " +
+        "start paving another one.";
+        sources[1] = "Dolly Parton";
+
+        quotes[2] = "The most difficult thing is the decision to act, " +
+        "the rest is merely tenacity.";
+        sources[2] = "Amelia Earhart";
+
+        quotes[3] = "What's another word for thesaurus?";
+        sources[3] = "Steven Wright";
+		
+		quotes[4] = "A lie told often enough becomes the truth."; 
+		sources[4] = "Vladimir Lenin";
+
+        // Get a random index into the arrays
+        i = Math.floor(Math.random() * quotes.length);
+
+        // Write out the quote as HTML
+        document.write("<p style='background-color: #c0b0ff; text-align:center'>\"");
+        document.write(quotes[i] + "\"");
+        document.write("<em>- " + sources[i] + "</em>");
+        document.write("</p>");
+      }
+      // Stop hiding the script -->
+  </script>
+  </head>
+
+  <body>
+    <h1>Quotable Quotes</h1>
+    <p>Following is a random quotable quote. To see a new quote just
+    reload this page.</p>
+	<p>This page uses a Javascript function with the library functions Math.random() and document.write()
+	to print the quotes.</p>
+    <script type="text/javascript">
+      <!-- Hide the script from old browsers
+      getQuote();
+      // Stop hiding the script -->
+    </script>
+  </body>
+</html>

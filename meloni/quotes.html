@@ -5,7 +5,7 @@
     <title>Random Quote Generator</title>
 
     <script type="text/javascript">
-      <!-- Hide the script from old browsers
+
       function getQuote() {
         // Create the arrays
         var quotes = new Array(5);
@@ -38,7 +38,18 @@
         document.write("<em>- " + sources[i] + "</em>");
         document.write("</p>");
       }
-      // Stop hiding the script -->
+ 
+	  
+	  // show or hide items
+	  function showHide() {
+       if (!document.getElementById) return;
+       var heading1 = document.getElementById("heading1");
+       var heading2 = document.getElementById("heading2");
+       var showheading1 = document.checkboxform.checkbox1.checked;
+       var showheading2 = document.checkboxform.checkbox2.checked;
+       heading1.style.visibility=(showheading1) ? "visible" : "hidden";
+       heading2.style.visibility=(showheading2) ? "visible" : "hidden";
+      }
   </script>
   </head>
 
@@ -53,5 +64,28 @@
       getQuote();
       // Stop hiding the script -->
     </script>
+	
+	<h1>Last Modified</h1>
+    <p>Displaying the Last Modified Date</p>
+    <p>This page was last modified on:
+    <script type="text/javascript">
+       document.write(document.lastModified);
+    </script>
+    </p>
+	
+	<h1>Hiding or Showing Objects</h1>
+	<h2 id="heading1">This is the first heading</h2>
+	<h2 id="heading2">This is the second heading</h2>
+	<p>Using the W3C DOM, you can choose whether to show or hide 
+	the headings on this page using the checkboxes below.</p>
+	<form name="checkboxform">
+	<input type="checkbox" name="checkbox1" 
+		onclick="showHide();" checked="checked" />
+	<span style="font-weight:bold">Show first heading</span><br>
+	<input type="checkbox" name="checkbox2" 
+	   onclick="showHide();" checked="checked" />
+	<span style="font-weight:bold">Show second heading</span><br>
+	</form>
+	
   </body>
 </html>

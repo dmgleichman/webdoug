@@ -1,0 +1,12 @@
+Roast options
+temperatures in F
+From smokinbeans.com
+
+352	First Crack  177C
+362 Light Roast
+372 City Roast
+382 Medium Roast
+392	Medium/Dark Roast  200C
+402	Dark Roast
+412 French Roast
+422 Italian Roast  217C

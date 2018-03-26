@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<title>jQuery Tutorial Part 3</title>
+	<meta charset="UTF-8">
+	
+	<script src="jquery-3.3.1.min.js"></script>
+	
+	<script>
+	$(document).ready(function(){
+	
+	
+	    $("#hide").click(function(){
+        $("p").hide();
+		});
+		$("#show").click(function(){
+			$("p").show();
+		});
+	
+		$("tr:odd").css("background-color", "yellow");
+
+		$("button").click(function(){
+			$("tr:odd").hide();
+		});
+	    $("input").focus(function(){
+			$(this).css("background-color", "#f0cccc");
+		});
+		$("input").blur(function(){
+			$(this).css("background-color", "#ffffff");
+		});
+		$("p").on({
+			mouseenter: function(){
+				$(this).css("background-color", "lightgray");
+			},
+			mouseleave: function(){
+				$(this).css("background-color", "lightblue");
+			},
+			click: function(){
+				$(this).css("background-color", "yellow");
+		}
+	
+	});
+	
+
+}); 
+	</script>	
+</head>
+
+<body>
+    <h1>jQuery more tests</h1>
+	
+	
+	<p>Working through the jQuery tutorial on w3schools</p>
+	
+
+	<h2 class="test">This is a heading</h2>
+
+	<p class="test">This is a paragraph.</p>
+	<p>This is another paragraph.</p>
+
+	<button>Click me</button>
+	
+	<h1>Welcome to My Web Page</h1>
+	<p>Button hides table elements in odd rows</p>
+
+	<table border="1">
+	  <tr>
+		<th>Company</th>
+		<th>Country</th>
+	  </tr>
+	  <tr>
+		<td>Alfreds Futterkiste</td>
+		<td>Germany</td>
+	  </tr>
+	  <tr>
+		<td>Berglunds snabbköp</td>
+		<td>Sweden</td>
+	  </tr>
+	  <tr>
+		<td>Centro comercial Moctezuma</td>
+		<td>Mexico</td>
+	  </tr>
+	  <tr>
+		<td>Ernst Handel</td>
+		<td>Austria</td>
+	  </tr>
+	  <tr>
+		<td>Island Trading</td>
+		<td>UK</td>
+	  </tr>
+	</table>
+	
+	<h1>jQuery Event Methods</h1>
+	<p id="p1">Enter this paragraph. Mouse Enter P1.</p>
+	<p id="p2">Enter this paragraph. Mouse Leave P2.</p>
+	
+
+	<h1>Using Focus and Blur</h1>
+	Name: <input type="text" name="fullname"><br>
+	Email: <input type="text" name="email">
+	
+	<h1>Using Hide and Show</h1>	
+	<p>If you click on the "Hide" button, I will disappear.</p>
+
+	<button id="hide">Hide</button>
+	<button id="show">Show</button>
+
+
+</body>
+</html>	
+	
+
+</body>
+</html>

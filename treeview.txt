@@ -1,0 +1,510 @@
+Folder PATH listing for volume OS
+Volume serial number is E697-859E
+C:.
+|   .gitignore
+|   codeigniter.html
+|   favicon.ico
+|   index.html
+|   LICENSE
+|   README.md
+|   sql_starting.html
+|   treeview.txt
+|   webdoug.ico
+|   
++---meloni
+|       index.html
+|       numguess.php
+|       quotes.html
+|       
++---pics
+|       pic_bulboff.gif
+|       pic_bulbon.gif
+|       
++---simple_udp_client_server
+|       big_client.c
+|       big_server.c
+|       udp_simple_client.c
+|       udp_simple_server.c
+|       
++---testc
+|   \---binrw
+|       |   .cproject
+|       |   .gitignore
+|       |   .project
+|       |   
+|       +---.settings
+|       |       language.settings.xml
+|       |       org.eclipse.cdt.managedbuilder.core.prefs
+|       |       
+|       +---Debug
+|       |   |   binrw.exe
+|       |   |   read_data_file.txt
+|       |   |   testpack.php
+|       |   |   testunpack.php
+|       |   |   write_data_file.txt
+|       |   |   
+|       |   \---src
+|       |           binrw.o
+|       |           
+|       \---src
+|               binrw.c
+|               
++---testcgi
+|       printenv.pl
+|       
++---testci
+|   |   index.php
+|   |   readme.md
+|   |   
+|   +---application
+|   |   |   .htaccess
+|   |   |   index.html
+|   |   |   
+|   |   +---cache
+|   |   |       index.html
+|   |   |       
+|   |   +---config
+|   |   |       autoload.php
+|   |   |       config.php
+|   |   |       constants.php
+|   |   |       database.php
+|   |   |       doctypes.php
+|   |   |       foreign_chars.php
+|   |   |       hooks.php
+|   |   |       index.html
+|   |   |       memcached.php
+|   |   |       migration.php
+|   |   |       mimes.php
+|   |   |       profiler.php
+|   |   |       routes.php
+|   |   |       smileys.php
+|   |   |       user_agents.php
+|   |   |       
+|   |   +---controllers
+|   |   |       Blog.php
+|   |   |       hello.php
+|   |   |       index.html
+|   |   |       News.php
+|   |   |       Pages.php
+|   |   |       Products.php
+|   |   |       StudentForm.php
+|   |   |       Welcome.php
+|   |   |       
+|   |   +---core
+|   |   |       index.html
+|   |   |       
+|   |   +---helpers
+|   |   |       index.html
+|   |   |       
+|   |   +---hooks
+|   |   |       index.html
+|   |   |       
+|   |   +---language
+|   |   |   |   index.html
+|   |   |   |   
+|   |   |   \---english
+|   |   |           index.html
+|   |   |           
+|   |   +---libraries
+|   |   |       index.html
+|   |   |       
+|   |   +---logs
+|   |   |       index.html
+|   |   |       
+|   |   +---models
+|   |   |       hello_model.php
+|   |   |       index.html
+|   |   |       News_model.php
+|   |   |       
+|   |   +---third_party
+|   |   |       index.html
+|   |   |       
+|   |   \---views
+|   |       |   blog_view.php
+|   |       |   header.php
+|   |       |   index.html
+|   |       |   one.php
+|   |       |   simple_view.php
+|   |       |   student_form_view.php
+|   |       |   styles.css
+|   |       |   welcome_message.php
+|   |       |   
+|   |       +---errors
+|   |       |   |   index.html
+|   |       |   |   
+|   |       |   +---cli
+|   |       |   |       error_404.php
+|   |       |   |       error_db.php
+|   |       |   |       error_exception.php
+|   |       |   |       error_general.php
+|   |       |   |       error_php.php
+|   |       |   |       index.html
+|   |       |   |       
+|   |       |   \---html
+|   |       |           error_404.php
+|   |       |           error_db.php
+|   |       |           error_exception.php
+|   |       |           error_general.php
+|   |       |           error_php.php
+|   |       |           index.html
+|   |       |           
+|   |       +---news
+|   |       |       create.php
+|   |       |       index.php
+|   |       |       success.php
+|   |       |       view.php
+|   |       |       
+|   |       +---pages
+|   |       |       about.php
+|   |       |       hello.php
+|   |       |       
+|   |       \---templates
+|   |               footer.php
+|   |               header.php
+|   |               header_name.php
+|   |               
+|   +---css
+|   |       styles.css
+|   |       
+|   +---datafiles
+|   |       news.csv
+|   |       news.sql
+|   |       
+|   \---system
+|       |   .htaccess
+|       |   index.html
+|       |   
+|       +---core
+|       |   |   Benchmark.php
+|       |   |   CodeIgniter.php
+|       |   |   Common.php
+|       |   |   Config.php
+|       |   |   Controller.php
+|       |   |   Exceptions.php
+|       |   |   Hooks.php
+|       |   |   index.html
+|       |   |   Input.php
+|       |   |   Lang.php
+|       |   |   Loader.php
+|       |   |   Log.php
+|       |   |   Model.php
+|       |   |   Output.php
+|       |   |   Router.php
+|       |   |   Security.php
+|       |   |   URI.php
+|       |   |   Utf8.php
+|       |   |   
+|       |   \---compat
+|       |           hash.php
+|       |           index.html
+|       |           mbstring.php
+|       |           password.php
+|       |           standard.php
+|       |           
+|       +---database
+|       |   |   DB.php
+|       |   |   DB_cache.php
+|       |   |   DB_driver.php
+|       |   |   DB_forge.php
+|       |   |   DB_query_builder.php
+|       |   |   DB_result.php
+|       |   |   DB_utility.php
+|       |   |   index.html
+|       |   |   
+|       |   \---drivers
+|       |       |   index.html
+|       |       |   
+|       |       +---cubrid
+|       |       |       cubrid_driver.php
+|       |       |       cubrid_forge.php
+|       |       |       cubrid_result.php
+|       |       |       cubrid_utility.php
+|       |       |       index.html
+|       |       |       
+|       |       +---ibase
+|       |       |       ibase_driver.php
+|       |       |       ibase_forge.php
+|       |       |       ibase_result.php
+|       |       |       ibase_utility.php
+|       |       |       index.html
+|       |       |       
+|       |       +---mssql
+|       |       |       index.html
+|       |       |       mssql_driver.php
+|       |       |       mssql_forge.php
+|       |       |       mssql_result.php
+|       |       |       mssql_utility.php
+|       |       |       
+|       |       +---mysql
+|       |       |       index.html
+|       |       |       mysql_driver.php
+|       |       |       mysql_forge.php
+|       |       |       mysql_result.php
+|       |       |       mysql_utility.php
+|       |       |       
+|       |       +---mysqli
+|       |       |       index.html
+|       |       |       mysqli_driver.php
+|       |       |       mysqli_forge.php
+|       |       |       mysqli_result.php
+|       |       |       mysqli_utility.php
+|       |       |       
+|       |       +---oci8
+|       |       |       index.html
+|       |       |       oci8_driver.php
+|       |       |       oci8_forge.php
+|       |       |       oci8_result.php
+|       |       |       oci8_utility.php
+|       |       |       
+|       |       +---odbc
+|       |       |       index.html
+|       |       |       odbc_driver.php
+|       |       |       odbc_forge.php
+|       |       |       odbc_result.php
+|       |       |       odbc_utility.php
+|       |       |       
+|       |       +---pdo
+|       |       |   |   index.html
+|       |       |   |   pdo_driver.php
+|       |       |   |   pdo_forge.php
+|       |       |   |   pdo_result.php
+|       |       |   |   pdo_utility.php
+|       |       |   |   
+|       |       |   \---subdrivers
+|       |       |           index.html
+|       |       |           pdo_4d_driver.php
+|       |       |           pdo_4d_forge.php
+|       |       |           pdo_cubrid_driver.php
+|       |       |           pdo_cubrid_forge.php
+|       |       |           pdo_dblib_driver.php
+|       |       |           pdo_dblib_forge.php
+|       |       |           pdo_firebird_driver.php
+|       |       |           pdo_firebird_forge.php
+|       |       |           pdo_ibm_driver.php
+|       |       |           pdo_ibm_forge.php
+|       |       |           pdo_informix_driver.php
+|       |       |           pdo_informix_forge.php
+|       |       |           pdo_mysql_driver.php
+|       |       |           pdo_mysql_forge.php
+|       |       |           pdo_oci_driver.php
+|       |       |           pdo_oci_forge.php
+|       |       |           pdo_odbc_driver.php
+|       |       |           pdo_odbc_forge.php
+|       |       |           pdo_pgsql_driver.php
+|       |       |           pdo_pgsql_forge.php
+|       |       |           pdo_sqlite_driver.php
+|       |       |           pdo_sqlite_forge.php
+|       |       |           pdo_sqlsrv_driver.php
+|       |       |           pdo_sqlsrv_forge.php
+|       |       |           
+|       |       +---postgre
+|       |       |       index.html
+|       |       |       postgre_driver.php
+|       |       |       postgre_forge.php
+|       |       |       postgre_result.php
+|       |       |       postgre_utility.php
+|       |       |       
+|       |       +---sqlite
+|       |       |       index.html
+|       |       |       sqlite_driver.php
+|       |       |       sqlite_forge.php
+|       |       |       sqlite_result.php
+|       |       |       sqlite_utility.php
+|       |       |       
+|       |       +---sqlite3
+|       |       |       index.html
+|       |       |       sqlite3_driver.php
+|       |       |       sqlite3_forge.php
+|       |       |       sqlite3_result.php
+|       |       |       sqlite3_utility.php
+|       |       |       
+|       |       \---sqlsrv
+|       |               index.html
+|       |               sqlsrv_driver.php
+|       |               sqlsrv_forge.php
+|       |               sqlsrv_result.php
+|       |               sqlsrv_utility.php
+|       |               
+|       +---fonts
+|       |       index.html
+|       |       texb.ttf
+|       |       
+|       +---helpers
+|       |       array_helper.php
+|       |       captcha_helper.php
+|       |       cookie_helper.php
+|       |       date_helper.php
+|       |       directory_helper.php
+|       |       download_helper.php
+|       |       email_helper.php
+|       |       file_helper.php
+|       |       form_helper.php
+|       |       html_helper.php
+|       |       index.html
+|       |       inflector_helper.php
+|       |       language_helper.php
+|       |       number_helper.php
+|       |       path_helper.php
+|       |       security_helper.php
+|       |       smiley_helper.php
+|       |       string_helper.php
+|       |       text_helper.php
+|       |       typography_helper.php
+|       |       url_helper.php
+|       |       xml_helper.php
+|       |       
+|       +---language
+|       |   |   index.html
+|       |   |   
+|       |   \---english
+|       |           calendar_lang.php
+|       |           date_lang.php
+|       |           db_lang.php
+|       |           email_lang.php
+|       |           form_validation_lang.php
+|       |           ftp_lang.php
+|       |           imglib_lang.php
+|       |           index.html
+|       |           migration_lang.php
+|       |           number_lang.php
+|       |           pagination_lang.php
+|       |           profiler_lang.php
+|       |           unit_test_lang.php
+|       |           upload_lang.php
+|       |           
+|       \---libraries
+|           |   Calendar.php
+|           |   Cart.php
+|           |   Driver.php
+|           |   Email.php
+|           |   Encrypt.php
+|           |   Encryption.php
+|           |   Form_validation.php
+|           |   Ftp.php
+|           |   Image_lib.php
+|           |   index.html
+|           |   Javascript.php
+|           |   Migration.php
+|           |   Pagination.php
+|           |   Parser.php
+|           |   Profiler.php
+|           |   Table.php
+|           |   Trackback.php
+|           |   Typography.php
+|           |   Unit_test.php
+|           |   Upload.php
+|           |   User_agent.php
+|           |   Xmlrpc.php
+|           |   Xmlrpcs.php
+|           |   Zip.php
+|           |   
+|           +---Cache
+|           |   |   Cache.php
+|           |   |   index.html
+|           |   |   
+|           |   \---drivers
+|           |           Cache_apc.php
+|           |           Cache_dummy.php
+|           |           Cache_file.php
+|           |           Cache_memcached.php
+|           |           Cache_redis.php
+|           |           Cache_wincache.php
+|           |           index.html
+|           |           
+|           +---Javascript
+|           |       index.html
+|           |       Jquery.php
+|           |       
+|           \---Session
+|               |   index.html
+|               |   Session.php
+|               |   SessionHandlerInterface.php
+|               |   Session_driver.php
+|               |   
+|               \---drivers
+|                       index.html
+|                       Session_database_driver.php
+|                       Session_files_driver.php
+|                       Session_memcached_driver.php
+|                       Session_redis_driver.php
+|                       
++---testhtml
+|       dougtestpage.html
+|       dougtestpage2.html
+|       doug_styles.css
+|       gnome.jpg
+|       htmlcolors_part3.html
+|       htmlcomputercode_part14.html
+|       htmlcss_part4.html
+|       htmlexternalcss_part5.html
+|       htmlframes_part9.html
+|       htmlhead_part10.html
+|       htmlhorizontallists_part8.html
+|       htmllayoutflexbox_part12.html
+|       htmllayoutfluxbox_part12.html
+|       htmllayout_part11.html
+|       htmllists_part7.html
+|       htmlresponsive_part13.html
+|       htmlsimple_part1.html
+|       htmlstylespart2.html
+|       htmltables_part6.html
+|       html_graphics.html
+|       index.html
+|       pic_bulboff.gif
+|       pic_bulbon.gif
+|       pic_the_scream.jpg
+|       pulpit_rock.jpg
+|       smiley.gif
+|       
++---testjavascript
+|       index.html
+|       jquery-3.3.1.min.js
+|       js_graphics_part2.html
+|       js_jquery_part1.html
+|       js_jquery_part2.html
+|       js_jquery_part3.html
+|       js_objects_part3.html
+|       js_start_part1.html
+|       myScript.js
+|       roast_temperatures.txt
+|       
+\---testphp
+    |   action.php
+    |   footer.php
+    |   formtest.php
+    |   form_complete.php
+    |   form_required.php
+    |   form_url_email.php
+    |   form_validation.php
+    |   form_write_file.php
+    |   functions_arrays_globals.php
+    |   getbrowser.php
+    |   getbrowser2.php
+    |   getbrowser3.php
+    |   getinfo.php
+    |   getpath.php
+    |   index.html
+    |   little.php
+    |   menu.php
+    |   php_arrays_multi.php
+    |   php_file_handling.php
+    |   php_file_upload.php
+    |   simple.php
+    |   strings_control.php
+    |   testform.php
+    |   test_get.php
+    |   udp_client.php
+    |   udp_client_two.php
+    |   udp_server.php
+    |   udp_server_two.php
+    |   upload.php
+    |   using_post.php
+    |   using_request.php
+    |   vars.php
+    |   webdictionary.txt
+    |   welcome.php
+    |   welcome_get.php
+    |   
+    \---uploads
+            gnome.jpg
+            

@@ -16,7 +16,7 @@ Most code is from [w3schools](https://www.w3schools.com/) with variations.
 2. Clone this repo into xampp/htdocs/webdoug
 3. Start the xampp control panel and start apache.
 4. From your browser goto localhost/webdoug
-5. You should see intex.html
+5. You should see index.html
 
 # Folders
 * testphp - Tests for PHP
